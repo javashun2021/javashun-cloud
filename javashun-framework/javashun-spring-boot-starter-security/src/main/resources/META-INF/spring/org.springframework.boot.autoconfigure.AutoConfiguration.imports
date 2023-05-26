@@ -1,0 +1,3 @@
+com.javashun.cloud.framework.security.config.JavashunSecurityRpcAutoConfiguration
+com.javashun.cloud.framework.security.config.JavashunSecurityAutoConfiguration
+com.javashun.cloud.framework.security.config.JavashunWebSecurityConfigurerAdapter

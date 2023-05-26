@@ -1,0 +1,2 @@
+com.javashun.cloud.framework.idempotent.config.JavashunIdempotentConfiguration
+com.javashun.cloud.framework.lock4j.config.JavashunLock4jConfiguration

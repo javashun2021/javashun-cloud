@@ -1,0 +1,5 @@
+com.javashun.cloud.framework.apilog.config.JavashunApiLogAutoConfiguration
+com.javashun.cloud.framework.jackson.config.JavashunJacksonAutoConfiguration
+com.javashun.cloud.framework.swagger.config.JavashunSwaggerAutoConfiguration
+com.javashun.cloud.framework.web.config.JavashunWebAutoConfiguration
+com.javashun.cloud.framework.apilog.config.JavashunApiLogRpcAutoConfiguration

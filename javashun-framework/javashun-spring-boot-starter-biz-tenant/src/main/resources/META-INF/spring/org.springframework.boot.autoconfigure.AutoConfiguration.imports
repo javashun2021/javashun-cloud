@@ -1,0 +1,3 @@
+com.javashun.cloud.framework.tenant.config.JavashunTenantRpcAutoConfiguration
+com.javashun.cloud.framework.tenant.config.JavashunTenantAutoConfiguration
+com.javashun.cloud.framework.tenant.config.JavashunTenantMQAutoConfiguration

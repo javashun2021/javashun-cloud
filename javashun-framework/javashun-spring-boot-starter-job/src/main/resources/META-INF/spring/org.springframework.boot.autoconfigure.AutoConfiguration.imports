@@ -1,0 +1,2 @@
+com.javashun.cloud.framework.quartz.config.JavashunXxlJobAutoConfiguration
+com.javashun.cloud.framework.quartz.config.JavashunAsyncAutoConfiguration

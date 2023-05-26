@@ -1,0 +1,2 @@
+com.javashun.cloud.framework.env.config.JavashunEnvWebAutoConfiguration
+com.javashun.cloud.framework.env.config.JavashunEnvRpcAutoConfiguration
