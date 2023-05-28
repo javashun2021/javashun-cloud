@@ -18,7 +18,7 @@
         <!-- 统一依赖管理 -->
         <spring.boot.version>2.7.11</spring.boot.version>
         <spring.cloud.version>2021.0.5</spring.cloud.version>
-        <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
+        <spring.cloud.alibaba.version>2021.0.4.0</spring.cloud.alibaba.version>
         <!-- Web 相关 -->
         <servlet.versoin>2.5</servlet.versoin>
         <swagger.version>2.2.8</swagger.version>
