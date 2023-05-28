@@ -23,7 +23,7 @@ public class CodegenSQLParserTest extends BaseDbUnitTest {
                 "  PRIMARY KEY (`id`) USING BTREE\n" +
                 ") ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8mb4 COMMENT='字典类型表';";
         CodegenSQLParser.parse(sql);
-        // TODO 芋艿：后续完善断言
+        // TODO javier：后续完善断言
     }
 
 }

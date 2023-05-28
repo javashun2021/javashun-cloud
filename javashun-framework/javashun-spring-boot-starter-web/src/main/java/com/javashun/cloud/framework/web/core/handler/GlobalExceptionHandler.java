@@ -179,7 +179,7 @@ public class GlobalExceptionHandler {
         return CommonResult.error(METHOD_NOT_ALLOWED.getCode(), String.format("请求方法不正确:%s", ex.getMessage()));
     }
 
-    // TODO 芋艿：暂时去掉
+    // TODO javier：暂时去掉
 //    /**
 //     * 处理 Resilience4j 限流抛出的异常
 //     */

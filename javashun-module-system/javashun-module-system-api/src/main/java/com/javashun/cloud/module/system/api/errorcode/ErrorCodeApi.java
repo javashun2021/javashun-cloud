@@ -18,7 +18,7 @@ import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@FeignClient(name = ApiConstants.NAME) // TODO 芋艿：fallbackFactory =
+@FeignClient(name = ApiConstants.NAME) // TODO javier：fallbackFactory =
 @Tag(name =  "RPC 服务 - 错误码")
 public interface ErrorCodeApi {
 

@@ -34,13 +34,13 @@ public class AlipayWapPayClient extends AbstractAlipayClient {
         model.setSubject(reqDTO.getSubject());
         model.setBody(reqDTO.getBody());
         model.setTotalAmount(calculateAmount(reqDTO.getAmount()).toString());
-        model.setProductCode("QUICK_WAP_PAY"); // TODO 芋艿：这里咋整
-        //TODO 芋艿：这里咋整  jason @芋艿 可以去掉吧,
-        // TODO 芋艿 似乎这里不用传sellerId
+        model.setProductCode("QUICK_WAP_PAY"); // TODO javier：这里咋整
+        //TODO javier：这里咋整  jason @javier 可以去掉吧,
+        // TODO javier 似乎这里不用传sellerId
         // https://opendocs.alipay.com/apis/api_1/alipay.trade.wap.pay
         //model.setSellerId("2088102147948060");
         model.setTimeExpire(DateUtil.format(reqDTO.getExpireTime(),"yyyy-MM-dd HH:mm:ss"));
-        // TODO 芋艿：userIp
+        // TODO javier：userIp
         // 构建 AlipayTradeWapPayRequest
         AlipayTradeWapPayRequest request = new AlipayTradeWapPayRequest();
         request.setBizModel(model);
@@ -55,7 +55,7 @@ public class AlipayWapPayClient extends AbstractAlipayClient {
             return PayCommonResult.build(e.getErrCode(), e.getErrMsg(), null, codeMapping);
         }
 
-        // TODO 芋艿：sub Code
+        // TODO javier：sub Code
         if(response.isSuccess() && Objects.isNull(response.getCode()) && Objects.nonNull(response.getBody())){
             //成功alipay wap 成功 code 为 null , body 为form 表单
             return PayCommonResult.build("-9999", "Success", response, codeMapping);

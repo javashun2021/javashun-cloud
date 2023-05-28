@@ -32,7 +32,7 @@ public class AlipayQrPayClient extends AbstractAlipayClient {
         model.setSubject(reqDTO.getSubject());
         model.setBody(reqDTO.getBody());
         model.setTotalAmount(calculateAmount(reqDTO.getAmount()).toString()); // 单位：元
-        // TODO 芋艿：userIp + expireTime
+        // TODO javier：userIp + expireTime
         // 构建 AlipayTradePrecreateRequest
         AlipayTradePrecreateRequest request = new AlipayTradePrecreateRequest();
         request.setBizModel(model);
@@ -46,7 +46,7 @@ public class AlipayQrPayClient extends AbstractAlipayClient {
             log.error("[unifiedOrder][request({}) 发起支付失败]", toJsonString(reqDTO), e);
             return PayCommonResult.build(e.getErrCode(), e.getErrMsg(), null, codeMapping);
         }
-        // TODO 芋艿：sub Code 需要测试下各种失败的情况
+        // TODO javier：sub Code 需要测试下各种失败的情况
         return PayCommonResult.build(response.getCode(), response.getMsg(), response, codeMapping);
     }
 }

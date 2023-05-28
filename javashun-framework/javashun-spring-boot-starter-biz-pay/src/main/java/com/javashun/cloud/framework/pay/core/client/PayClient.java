@@ -47,7 +47,7 @@ public interface PayClient {
      */
     PayRefundNotifyDTO parseRefundNotify(PayNotifyDataDTO notifyData);
 
-    // TODO @芋艿：后续改成非 default，避免不知道去实现
+    // TODO @javier：后续改成非 default，避免不知道去实现
     /**
      * 验证是否渠道通知
      *
@@ -58,7 +58,7 @@ public interface PayClient {
         return true;
     }
 
-    // TODO @芋艿：后续改成非 default，避免不知道去实现
+    // TODO @javier：后续改成非 default，避免不知道去实现
     /**
      * 判断是否为退款通知
      *

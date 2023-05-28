@@ -37,7 +37,7 @@ public class SecurityConfiguration {
                 // 文件读取
                 registry.antMatchers(buildAdminApi("/infra/file/*/get/**")).permitAll();
 
-                // TODO 芋艿：这个每个项目都需要重复配置，得捉摸有没通用的方案
+                // TODO javier：这个每个项目都需要重复配置，得捉摸有没通用的方案
                 // RPC 服务的安全配置
                 registry.antMatchers(ApiConstants.PREFIX + "/**").permitAll();
             }
