@@ -19,6 +19,18 @@
         3. 自动写入：项目启动时，将项目本地的错误码写到 system-server 服务中，方便管理员在管理后台编辑；
     </description>
     <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>

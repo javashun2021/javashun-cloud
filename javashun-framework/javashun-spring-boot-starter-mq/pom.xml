@@ -18,6 +18,18 @@
             2. 基于 Spring Cloud Bus 实现事件总线
     </description>
     <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- MQ 相关 -->

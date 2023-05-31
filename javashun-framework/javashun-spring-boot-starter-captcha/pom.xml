@@ -15,6 +15,18 @@
     <description>验证码拓展
         1. 基于 aj-captcha 实现滑块验证码，文档：https://ajcaptcha.beliefteam.cn/captcha-doc/
     </description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- Spring 核心 -->
