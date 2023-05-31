@@ -66,7 +66,7 @@ public class AlipayQrPayClientTest extends BaseMockitoUnitTest {
     }
 
     @Test
-    @Disabled // TODO 芋艿：临时禁用
+    @Disabled // TODO javier：临时禁用
     public void create() throws AlipayApiException {
         // TODO @tina：参数可以尽量随机一点，使用随机方法。这样的好处是，避免对固定参数的依赖，导致可能仅仅满足固定参数的结果
         // 这里，设置可以直接随机整个对象。

@@ -153,7 +153,7 @@ public class BpmModelServiceImpl implements BpmModelService {
             throw exception(MODEL_NOT_EXISTS);
         }
         // 1.2 校验流程图
-        // TODO 芋艿：校验流程图的有效性；例如说，是否有开始的元素，是否有结束的元素；
+        // TODO javier：校验流程图的有效性；例如说，是否有开始的元素，是否有结束的元素；
         byte[] bpmnBytes = repositoryService.getModelEditorSource(model.getId());
         if (bpmnBytes == null) {
             throw exception(MODEL_NOT_EXISTS);

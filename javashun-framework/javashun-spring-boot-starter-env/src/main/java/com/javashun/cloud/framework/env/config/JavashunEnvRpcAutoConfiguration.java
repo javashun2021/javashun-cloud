@@ -22,7 +22,7 @@ public class JavashunEnvRpcAutoConfiguration {
 
     // ========== Feign 相关 ==========
 
-    // TODO @芋艿：由于 loadBalancerClientFactoryBeanPostProcessor 拦截不到 LoadBalancerClientFactory，所以采用 loadBalancerClientFactory 实现
+    // TODO @javier：由于 loadBalancerClientFactoryBeanPostProcessor 拦截不到 LoadBalancerClientFactory，所以采用 loadBalancerClientFactory 实现
 //    @Bean
 //    public BeanPostProcessor loadBalancerClientFactoryBeanPostProcessor(LoadBalancerClientsProperties properties) {
 //        return new BeanPostProcessor() {

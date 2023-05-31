@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
 
-// TODO 芋艿：参数校验
+// TODO javier：参数校验
 
 /**
  * 支付宝的 PayClientConfig 实现类

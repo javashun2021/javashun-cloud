@@ -249,7 +249,7 @@
                 <artifactId>javashun-spring-boot-starter-mybatis</artifactId>
                 <version>${revision}</version>
             </dependency>
-            <dependency> <!-- TODO 芋艿：说不清楚 -->
+            <dependency> <!-- TODO javier：说不清楚 -->
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-webflux-ui</artifactId>
                 <version>${springdoc.version}</version>

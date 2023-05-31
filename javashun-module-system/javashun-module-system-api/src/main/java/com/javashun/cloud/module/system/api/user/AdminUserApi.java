@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-@FeignClient(name = ApiConstants.NAME) // TODO 芋艿：fallbackFactory =
+@FeignClient(name = ApiConstants.NAME) // TODO javier：fallbackFactory =
 @Tag(name = "RPC 服务 - 管理员用户")
 public interface AdminUserApi {
 

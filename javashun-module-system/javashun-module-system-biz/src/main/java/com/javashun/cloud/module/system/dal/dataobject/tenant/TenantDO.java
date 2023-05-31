@@ -58,7 +58,7 @@ public class TenantDO extends BaseDO {
     /**
      * 绑定域名
      *
-     * TODO 芋艿：目前是预留字段，未来会支持根据域名，自动查询到对应的租户。等等
+     * TODO javier：目前是预留字段，未来会支持根据域名，自动查询到对应的租户。等等
      */
     private String domain;
     /**

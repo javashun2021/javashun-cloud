@@ -150,7 +150,7 @@ public class ConfigServiceImplTest extends BaseDbUnitTest {
     public void testGetConfigPage() {
         // mock 数据
         ConfigDO dbConfig = randomConfigDO(o -> { // 等会查询到
-            o.setName("芋艿");
+            o.setName("javier");
             o.setConfigKey("yunai");
             o.setType(ConfigTypeEnum.SYSTEM.getType());
             o.setCreateTime(buildTime(2021, 2, 1));
@@ -183,7 +183,7 @@ public class ConfigServiceImplTest extends BaseDbUnitTest {
     public void testGetConfigList() {
         // mock 数据
         ConfigDO dbConfig = randomConfigDO(o -> { // 等会查询到
-            o.setName("芋艿");
+            o.setName("javier");
             o.setConfigKey("yunai");
             o.setType(ConfigTypeEnum.SYSTEM.getType());
             o.setCreateTime(buildTime(2021, 2, 1));

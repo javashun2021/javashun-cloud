@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@FeignClient(name = ApiConstants.NAME) // TODO 芋艿：fallbackFactory =
+@FeignClient(name = ApiConstants.NAME) // TODO javier：fallbackFactory =
 @Tag(name =  "RPC 服务 - 社交用户")
 public interface SocialUserApi {
 

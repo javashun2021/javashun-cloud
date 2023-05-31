@@ -61,7 +61,7 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
     public void testGetDictDataPage() {
         // mock 数据
         DictDataDO dbDictData = randomPojo(DictDataDO.class, o -> { // 等会查询到
-            o.setLabel("芋艿");
+            o.setLabel("javier");
             o.setDictType("yunai");
             o.setStatus(CommonStatusEnum.ENABLE.getStatus());
         });
@@ -90,7 +90,7 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
     public void testGetDictDataList_export() {
         // mock 数据
         DictDataDO dbDictData = randomPojo(DictDataDO.class, o -> { // 等会查询到
-            o.setLabel("芋艿");
+            o.setLabel("javier");
             o.setDictType("yunai");
             o.setStatus(CommonStatusEnum.ENABLE.getStatus());
         });
