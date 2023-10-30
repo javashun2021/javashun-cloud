@@ -3,3 +3,5 @@ javashun云服务
 对外提供jar客户端pom调用
 不涉及运营业务逻辑
 完全做通用的业务框架
+
+项目中的api对外的dubbo及feign
