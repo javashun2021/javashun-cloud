@@ -5,10 +5,7 @@ import com.javashun.cloud.framework.mybatis.core.mapper.BaseMapperX;
 import com.javashun.cloud.framework.mybatis.core.query.LambdaQueryWrapperX;
 import com.javashun.cloud.module.infra.controller.admin.server.vo.ServerHardwarePageReqVO;
 import com.javashun.cloud.module.infra.dal.dataobject.server.ServerHardwareDO;
-import com.javashun.cloud.module.infra.dal.dataobject.test.TestDemoDO;
 import org.apache.ibatis.annotations.Mapper;
-
-import java.util.List;
 
 /**
  * 硬件服务器 Mapper
@@ -25,7 +22,5 @@ public interface ServerHardwareMapper extends BaseMapperX<ServerHardwareDO> {
                 .betweenIfPresent(ServerHardwareDO::getCreateTime, reqVO.getCreateTime())
                 .orderByDesc(ServerHardwareDO::getId));
     }
-
-    List<TestDemoDO> selectList2();
 
 }
