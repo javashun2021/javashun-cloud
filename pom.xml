@@ -18,6 +18,8 @@
         <module>javashun-module-infra</module>
         <!--        <module>javashun-module-pay</module>-->
         <module>javashun-module-report</module>
+
+        <module>javashun-module-mp</module>
 <!--        <module>javashun-module-site</module>-->
     </modules>
 
