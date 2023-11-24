@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 /**
  * Collection 工具类
+ *
+ * @author javashun
  */
 public class CollectionUtils {
 
@@ -162,13 +164,30 @@ public class CollectionUtils {
         return from.stream().filter(predicate).findFirst().orElse(null);
     }
 
-    public static <T, V extends Comparable<? super V>> V getMaxValue(List<T> from, Function<T, V> valueFunc) {
+    public static <T, V extends Comparable<? super V>> V getMaxValue(Collection<T> from, Function<T, V> valueFunc) {
         if (CollUtil.isEmpty(from)) {
             return null;
         }
         assert from.size() > 0; // 断言，避免告警
         T t = from.stream().max(Comparator.comparing(valueFunc)).get();
         return valueFunc.apply(t);
+    }
+
+    public static <T, V extends Comparable<? super V>> V getMinValue(List<T> from, Function<T, V> valueFunc) {
+        if (CollUtil.isEmpty(from)) {
+            return null;
+        }
+        assert from.size() > 0; // 断言，避免告警
+        T t = from.stream().min(Comparator.comparing(valueFunc)).get();
+        return valueFunc.apply(t);
+    }
+
+    public static <T, V extends Comparable<? super V>> V getSumValue(List<T> from, Function<T, V> valueFunc, BinaryOperator<V> accumulator) {
+        if (CollUtil.isEmpty(from)) {
+            return null;
+        }
+        assert from.size() > 0; // 断言，避免告警
+        return from.stream().map(valueFunc).reduce(accumulator).get();
     }
 
     public static <T> void addIfNotNull(Collection<T> coll, T item) {

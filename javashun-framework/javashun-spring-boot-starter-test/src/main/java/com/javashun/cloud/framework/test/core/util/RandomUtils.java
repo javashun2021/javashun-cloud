@@ -107,6 +107,10 @@ public class RandomUtils {
         return pojo;
     }
 
+    public static String randomURL() {
+        return "https://www.javashun.com/" + randomString();
+    }
+
     @SafeVarargs
     public static <T> T randomPojo(Class<T> clazz, Type type, Consumer<T>... consumers) {
         T pojo = PODAM_FACTORY.manufacturePojo(clazz, type);

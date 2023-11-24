@@ -2,6 +2,7 @@ package com.javashun.cloud.framework.common.exception.util;
 
 import com.javashun.cloud.framework.common.exception.ErrorCode;
 import com.javashun.cloud.framework.common.exception.ServiceException;
+import com.javashun.cloud.framework.common.exception.enums.GlobalErrorCodeConstants;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,7 +18,7 @@ import java.util.concurrent.ConcurrentMap;
  *
  * 因为 {@link #MESSAGES} 里面默认是没有异常信息提示的模板的，所以需要使用方自己初始化进去。目前想到的有几种方式：
  *
- * 1. 异常提示信息，写在枚举类中，例如说，com.javashun.oceans.user.api.constants.ErrorCodeEnum 类 + ServiceExceptionConfiguration
+ * 1. 异常提示信息，写在枚举类中，例如说，cn.iocoder.oceans.user.api.constants.ErrorCodeEnum 类 + ServiceExceptionConfiguration
  * 2. 异常提示信息，写在 .properties 等等配置文件
  * 3. 异常提示信息，写在 Apollo 等等配置中心中，从而实现可动态刷新
  * 4. 异常提示信息，存储在 db 等等数据库中，从而实现可动态刷新
@@ -78,6 +79,10 @@ public class ServiceExceptionUtil {
     public static ServiceException exception0(Integer code, String messagePattern, Object... params) {
         String message = doFormat(code, messagePattern, params);
         return new ServiceException(code, message);
+    }
+
+    public static ServiceException invalidParamException(String messagePattern, Object... params) {
+        return exception0(GlobalErrorCodeConstants.BAD_REQUEST.getCode(), messagePattern, params);
     }
 
     // ========== 格式化方法 ==========
